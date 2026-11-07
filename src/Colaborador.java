@@ -1,43 +1,56 @@
 public class Colaborador {
 
-  private int matricula;
-  private String  nome;
-  private double salarioBase;
-  
+    // Constante do salário-base
+    public static final double SALARIO_BASE = 2000.00;
 
-  public int getMatricula(){
-    return matricula;
-  }
+    // Atributos privados
+    private int matricula;
+    private String nome;
+    private double salarioBase;
 
-  public String getNome(){
-    return nome;
-  }
+    // Construtor
+    public Colaborador(int matricula, String nome) {
+        this.matricula = matricula;
+        this.nome = nome;
+        this.salarioBase = SALARIO_BASE;
+    }
 
-  public double getSalarioBase(){
-    return salario;
-  }
+    // Getters
+    public int getMatricula() {
+        return matricula;
+    }
 
-  public int setMatricula(){
-    this.matricula = matricula;
-  }
-  public String setNome (){
-    this.nome = nome;
-  }
-  public double setSalarioBase (){
-    this.salarioBase = salarioBase;
-  }
+    public String getNome() {
+        return nome;
+    }
 
-  public void CalcularSalarioFinal{
-     System.out.println();
-  }
+    public double getSalarioBase() {
+        return salarioBase;
+    }
 
+    // Setters
+    public void setMatricula(int matricula) {
+        this.matricula = matricula;
+    }
 
-   public void ExibirDados{
-    System.out.println("");
-    System.out.println("");
-    System.out.println("");
-   }
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
+    public void setSalarioBase(double salarioBase) {
+        this.salarioBase = salarioBase;
+    }
 
+    // Calcula o salário final
+    public double calcularSalarioFinal() {
+        return salarioBase;
+    }
 
+    // Exibe os dados do colaborador
+    public void exibirDados() {
+        System.out.println("Matrícula: " + matricula);
+        System.out.println("Nome: " + nome);
+        System.out.println("Salário-base: " + salarioBase);
+        System.out.println("Salário final: " + calcularSalarioFinal());
+    }
 }
