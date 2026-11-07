@@ -53,4 +53,5 @@ public class Colaborador {
         System.out.println("Salário-base: " + salarioBase);
         System.out.println("Salário final: " + calcularSalarioFinal());
     }
+    
 }
